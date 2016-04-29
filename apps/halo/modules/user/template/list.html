@@ -1,0 +1,18 @@
+<div ng-if="users.length > 0">
+  <div class="row">
+    <div ng-repeat="user in users | limitTo:paging.limit:((paging.currentPage - 1)*paging.limit + 1)" class="col-md-3 col-xs-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">{{user.username}}</div>
+        <div class="panel-body">
+          {{user.email}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="center-block text-center">
+      <uib-pagination class="pagination-sm" total-items="users.length" items-per-page="paging.limit" max-size="4" ng-model="paging.currentPage" boundary-link-numbers="true">
+      </uib-pagination>
+    </div>
+  </div>
+</div>

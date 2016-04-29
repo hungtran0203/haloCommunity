@@ -1,0 +1,17 @@
+.tab-content {
+  margin-top: 15px; }
+
+.card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 250ms;
+  -moz-transition: all 250ms;
+  -ms-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms; }
+  .card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -moz-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px); }

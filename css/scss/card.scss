@@ -1,0 +1,10 @@
+@import './mixins';
+
+.card {
+  @include shadow(1);
+  @include transition(all 250ms);
+  &:hover {
+    @include shadow(3);
+    @include transform(translateY(-5px));
+  }
+}
